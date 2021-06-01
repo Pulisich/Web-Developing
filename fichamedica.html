@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ficha Médica</title>
+</head>
+<body>
+	<div> Encabezado con el nombre de la Escuela e imágenes en slide.</div>
+		<br>
+		<br>
+		<br>
+	<div>
+
+	<span>Logo//</span> 
+	<span > 
+		<a href="IdeaPulisich.html">Principal</a>, 
+		<a href="Donde.html">Dónde practicar</a>, 
+		<a href="Estudiantes.html">Estudiantes</a>, 
+		<a href="Instructores.html">Instructores</a>, 
+		<a href="Contacto.html">Contacto</a>.//
+	</span>
+
+	<h1>Ficha médica para practicantes.</h1>
+	<p> Lean detalladamente cada ítem antes de enviar, no se olviden de descargar la ficha al final de la página.</p>
+
+	<form ction="recibe.html" method="POST" enctype="multipart/form-data"> <!--Ver comentarios en Contactos.html-->
+		<p>Nombre y apellido completos:</p>
+			<input type="text" name="Nombreapellido">
+		<p>Edad</p>
+			<input type="number" name="Edad">
+		<p>Número de teléfono:</p>
+			<input type="tel" name="Teléfono">
+
+		<p>Contacto de emergencia:</p>
+			<input type="number" name="ContactoEmergencia">	
+		<p>Domicilio</p>
+			<input type="text" name="Domicilio">
+		<p>Obra social:</p>
+			<input type="text" name="ObraSocial">
+
+		<p>Documento Nacional de Identidad <strong>SIN PUNTOS</strong></p>
+			<input type="number" name="DNI">
+		<p>Género</p>
+			<select name="Género">
+				<option>-----</option>
+				<option>Masculino</option>
+				<option>Femenino</option>
+				<option>Transexual Masculino</option>
+				<option>Transexual Femenino</option>
+				<option>Asexual</option>
+				<option>Otro</option>
+				<option>Prefiero no decirlo</option>
+			</select>
+		<p>En caso de elegir otro detallar:</p>
+			<textarea name="mensaje"></textarea>	
+		<p>¿Tiene pronombres por los que deban referir?</p>
+			<select name="Género">
+				<option>----</option>
+				<option>No</option>
+				<option>El/Ellos</option>
+				<option>Ella/Ellas</option>
+				<option>Le/Les</option>
+				<option>Otro</option>
+				<option>Prefiero no decirlo</option>
+			</select>
+		<p>En caso de elegir otro detallar:</p>
+			<textarea name="mensaje"></textarea>
+		<p>Vacunas al día.</p>
+			<input type="radio" name="Vacunado" value="Si">
+			<label>Si</label>
+			<input type="radio" name="Vacunado" value="No">
+			<label>No</label>
+		<p>En caso de haber seleccionado no por favor detallar:</p>	
+			<select name="Vacunas">
+				<option>----</option>
+				<option>No tengo acceso a vacunas</option>
+				<option>Inmunodepresión</option>
+				<option>Objeción de conciencia</option>
+				<option>No cree en las vacunas</option>
+				
+			</select>
+		<p><strong>¡IMPORTANTE!:</strong> No se permitirá la práctica a individuos no vacunados por <strong>razones personales o de ideología</strong> a fin de garantizar la seguridad de aquellos practicantes inmunodeprimidos o que no poseen acceso a vacunas.</p>
+		
+		<p>Grupo sanguíneo</p>
+			<select>
+				<option>----</option>
+				<option> A+ </option>
+				<option> A- </option>
+				<option> B+ </option>
+				<option> B- </option>
+				<option> AB+ </option>
+				<option> AB- </option>
+				<option> O+ </option>
+				<option> O-</option>
+				<option> No sabe </option>
+			</select>
+		<p>Alergias</p>
+			<textarea name="Alergias"></textarea>
+		<p>Enfermedades crónicas.</p>
+			<select name="Enfermedades">
+				<option>----</option>
+				<option>No</option>
+				<option>No sabe</option>
+				<option>Asma</option>
+				<option>EPOC</option>
+				<option>Cáncer</option>
+				<option>HepatitisC</option>
+				<option>SIDA</option>
+				<option>VIH</option>
+				<option>Crohn</option>
+				<option>Cirrosis</option>
+				<option>Alzheimer</option>
+				<option>Parkinson</option>
+				<option>Piel de cristal</option>
+				<option>Huesos de cristal</option>
+				<option>Otro</option>
+				
+			</select>
+		<p>En caso de elegir otro detallar:</p>
+			<textarea name="Enfermedades"></textarea>
+	
+		<p>En caso de tener una enfermedad detallar si debe medicarse en clase, el medicamento, la dosis, y si necesita asistencia.</p>
+			<textarea name="medicamento">Medicamento/Dosis/¿Necesita asistencia?</textarea>
+		<p>Enfermedades mentales/trastornos de conducta</p>
+			<select name="Mentales">
+				<option>----</option>
+				<option>No</option>
+				<option>No sabe</option>
+				<option>Demencia</option>
+				<option>Psicosis</option>
+				<option>Autismo</option>
+				<option>Bipolaridad</option>
+				<option>TDAH/ADHD</option>
+				<option>Problemas de ira</option>
+				<option>Problemas de concentración</option>
+				<option>Depresión</option>
+				<option>Estrés Post Traumático</option>
+				<option>Otro</option>
+			</select>
+			<p>En caso de elegir otro detallar:</p>
+				<textarea name="Mentales"></textarea>
+		<p>Discapacidad:</p>
+			<input type="radio" name="inválido" value="Si">
+			<label>Si</label>
+			<input type="radio" name="inválido" value="No">
+			<label>No</label>
+		<p>Detallar discapacidad.</p>
+			<select name="Discapacidad">
+				<option>----</option>
+				<option>Autismo</option>
+				<option>Síndrome de Asperger</option>
+				<option>Síndrome de Down</option>
+				<option>Parálisis cerebral</option>
+				<option>Parálisis motora</option>
+				<option>Paraplejia</option>
+				<option>Cuadroplejia</option>
+				<option>Hipoacusia</option>
+				<option>Mutismo</option>
+				<option>Renguera</option>
+				<option>Lumbago</option>
+				<option>Otro</option>
+			</select>		
+
+		<p>En caso de elegir otro detallar:</p>
+				<textarea name="Discapacidad"></textarea>
+
+		<p>¿Ha tenido síntomas de Covid-19 en los últimos 14 días?</p>
+			<input type="radio" name="síntomas" value="Si">
+			<label>Si</label>
+			<input type="radio" name="síntomas" value="No">
+			<label>No</label>
+		<p>¿Ha tenido Covid-19?</p>
+			<input type="radio" name="Covid-19" value="Si">
+			<label>Si</label>
+			<input type="radio" name="Covid-19" value="No">
+			<label>No</label>
+		<p>¿Es paciente de riesgo?</p>
+			<input type="radio" name="Riesgo" value="Si">
+			<label>Si</label>
+			<input type="radio" name="Riesgo" value="No">
+			<label>No</label>
+
+		<p>¿Convive con paciente de riesgo?</p>
+			<input type="radio" name="Pacientederiesgo" value="Si">
+			<label>Si</label>
+			<input type="radio" name="Pacientederiesgo" value="No">
+			<label>No</label>
+		<p>Revisar todos los datos antes de enviar, recomendamos descargar la planilla para su conservación a futuro.</p>
+		<p>En caso de necesitar más de una planilla, enviar, descargar, y luego click en limpiar para rellenar una nueva planilla.</p>	
+			<input type="checkbox" name="LeiTodo">
+			<label>He leído toda la forma y he contestado de forma honesta en mi capacidad como practicante o responsable de un practicante.</label>
+			<br>
+			<br>
+			<input type="submit" name="enviar" value="ENVIAR">
+			<input type="reset" name="LIMPIAR">
+			<input type="submit" name="DESCARGAR">
+	</form>
+	<br>
+	<br>
+	<br>
+	<div>
+		<span> Barra con información legal copyright y de contacto por redes sociales, logos de instagram, facebook, y demás.</span>
+	</div>		
+</body>
+</html>
